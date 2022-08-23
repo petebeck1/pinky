@@ -20,7 +20,7 @@ def Message(msg, fg, bg):
 	mw, mh = font.getsize(msg)
 	x = (w / 2) - (mw / 2)
 	y = (h / 2) - (mh / 2)
-	draw.text((x, y), msg, fg, font)
+	draw.text((x, y-8), msg, fg, font)
 
 	# Update
 	inkyphat.set_image(img)
